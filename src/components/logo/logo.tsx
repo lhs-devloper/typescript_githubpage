@@ -3,7 +3,7 @@ import './logo.css';
 function Logo(){
     return (
       <div>
-        <a href="https://github.com/lhs-devloper">
+        <a className="LogoPosition" href="https://github.com/lhs-devloper">
           <img className="ImgSize" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" />
         </a>
       </div>

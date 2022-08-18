@@ -1,6 +1,8 @@
-.ImgSize {
+.LogoPosition{
     position: fixed;
     bottom: 10%;
+}
+.ImgSize {
     width: 30px;
     height: 30px;
 }

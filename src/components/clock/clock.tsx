@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import './clock.css'
 function Today(){
     const [counter, setCounter] = useState(new Date());
 
@@ -11,8 +11,8 @@ function Today(){
       return () => clearInterval(interval);
     }, []);
     return (
-      <div>
-        <h1>{counter.getHours()>=12 ? "오후: " + (counter.getHours()-12) : "오전: " + counter.getHours()}
+      <div className="position">
+        <h1>{counter.getHours()>=12 ? "Afternoon: " + (counter.getHours()-12) : "Morning: " + counter.getHours()}
         :{counter.getMinutes()<10? "0"+counter.getMinutes() : counter.getMinutes()}
         :{counter.getSeconds()<10? "0"+counter.getSeconds() : counter.getSeconds()}
         </h1>
